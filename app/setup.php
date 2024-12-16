@@ -10,6 +10,7 @@ use Roots\Acorn\Application;
 use Roots\Acorn\Assets\AssetManager;
 use Roots\Acorn\View\ViewServiceProvider;
 use Roots\Acorn\View\Composer;
+use Illuminate\View\Factory;
 
 /**
  * Register the theme assets.
@@ -161,7 +162,11 @@ add_action('after_setup_theme', function () {
             wp_mkdir_p($cachePath);
         }
         
-        return new ViewServiceProvider($app);
+        $viewServiceProvider = new ViewServiceProvider($app);
+        $viewServiceProvider->register();
+        $viewServiceProvider->boot();
+        
+        return $app->make('view');
     });
 
     /**
