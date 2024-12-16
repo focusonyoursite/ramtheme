@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'compiled' => wp_upload_dir()['basedir'].'/cache',
+    'compiled' => get_theme_file_path('storage/framework/views'),
 
 
     /*
@@ -47,5 +47,25 @@ return [
     'namespaces' => [
         /* Given the below example, in your views use something like: @include('WC::some.view.or.partial.here') */
         // 'WC' => WP_PLUGIN_DIR.'/woocommerce/templates/',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | View Composers
+    |--------------------------------------------------------------------------
+    |
+    | View composers allow you to attach data to views whenever they are rendered.
+    | This is particularly useful when you want to bind data to certain views
+    | that are rendered in many different places across your application.
+    |
+    */
+
+    'composers' => [
+        'App\View\Composers\App' => ['*'],
+        'App\View\Composers\Header' => ['partials.header'],
+        'App\View\Composers\Footer' => ['partials.footer'],
+        'App\View\Composers\Sidebar' => ['partials.sidebar'],
+        'App\View\Composers\Navigation' => ['partials.navigation'],
+        'App\View\Composers\Post' => ['partials.entry-meta'],
     ],
 ]; 
