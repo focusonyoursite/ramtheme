@@ -187,4 +187,54 @@ add_action('after_setup_theme', function() {
         'style',
         'script',
     ));
+
+    // Add support for full site editing
+    add_theme_support('block-templates');
+});
+
+// Register REST API routes
+add_action('rest_api_init', function() {
+    // Register menus endpoint
+    register_rest_route('wp/v2', '/menus', array(
+        'methods' => 'GET',
+        'callback' => function() {
+            $menus = wp_get_nav_menus();
+            return rest_ensure_response($menus);
+        },
+        'permission_callback' => '__return_true'
+    ));
+
+    // Register menu items endpoint
+    register_rest_route('wp/v2', '/menu-items/(?P<menu_id>\d+)', array(
+        'methods' => 'GET',
+        'callback' => function($request) {
+            $menu_id = $request['menu_id'];
+            $menu_items = wp_get_nav_menu_items($menu_id);
+            return rest_ensure_response($menu_items);
+        },
+        'permission_callback' => '__return_true'
+    ));
+});
+
+// Fix REST API CORS issues
+add_action('init', function() {
+    remove_filter('rest_pre_serve_request', 'rest_send_cors_headers');
+    add_filter('rest_pre_serve_request', function($value) {
+        header('Access-Control-Allow-Origin: *');
+        header('Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE');
+        header('Access-Control-Allow-Credentials: true');
+        header('Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, Authorization, Accept, Client-Security-Token, Accept-Encoding');
+        return $value;
+    });
+}, 15);
+
+// Fix REST API permissions
+add_filter('rest_authentication_errors', function($result) {
+    if (!empty($result)) {
+        return $result;
+    }
+    if (!is_user_logged_in()) {
+        return true;
+    }
+    return $result;
 });
