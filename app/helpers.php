@@ -5,7 +5,7 @@ namespace App;
 use Roots\Acorn\Application\Container;
 
 /**
- * Get the sage container.
+ * Get the sage containert.
  *
  * @param string $abstract
  * @param array  $parameters
