@@ -51,6 +51,22 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | View Directives
+    |--------------------------------------------------------------------------
+    |
+    | Hier definiëren we de Blade directives die beschikbaar zijn in onze views.
+    | Deze directives worden gebruikt om extra functionaliteit toe te voegen
+    | aan onze Blade templates.
+    |
+    */
+    'directives' => [
+        'asset' => Roots\Acorn\Assets\AssetDirective::class,
+        'style' => Roots\Acorn\Assets\StyleDirective::class,
+        'script' => Roots\Acorn\Assets\ScriptDirective::class,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | View Composers
     |--------------------------------------------------------------------------
     |
