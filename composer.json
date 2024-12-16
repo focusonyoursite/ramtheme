@@ -1,9 +1,9 @@
 {
-  "name": "roots/sage",
+  "name": "ram/theme",
   "type": "wordpress-theme",
   "license": "MIT",
   "description": "WordPress starter theme with a modern development workflow",
-  "homepage": "https://roots.io/sage/",
+  "homepage": "https://ramsite.nl",
   "authors": [
     {
       "name": "Ben Word",
