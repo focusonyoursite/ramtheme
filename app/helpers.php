@@ -2,7 +2,7 @@
 
 namespace App;
 
-use Roots\Sage\Container;
+use Roots\Acorn\Application\Container;
 
 /**
  * Get the sage container.
