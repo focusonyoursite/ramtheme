@@ -1249,6 +1249,36 @@
           "color": "#4c0519",
           "name": "Rose 950",
           "slug": "rose-950"
+        },
+        {
+          "color": "#0087ff",
+          "name": "Ram-blue DEFAULT",
+          "slug": "ram-blue-default"
+        },
+        {
+          "color": "#66b7ff",
+          "name": "Ram-blue Light",
+          "slug": "ram-blue-light"
+        },
+        {
+          "color": "#005199",
+          "name": "Ram-blue Dark",
+          "slug": "ram-blue-dark"
+        },
+        {
+          "color": "#9b00ff",
+          "name": "Ram-purple DEFAULT",
+          "slug": "ram-purple-default"
+        },
+        {
+          "color": "#c366ff",
+          "name": "Ram-purple Light",
+          "slug": "ram-purple-light"
+        },
+        {
+          "color": "#5d0099",
+          "name": "Ram-purple Dark",
+          "slug": "ram-purple-dark"
         }
       ]
     },
@@ -1274,8 +1304,8 @@
       "customFontSize": false,
       "fontFamilies": [
         {
-          "fontFamily": "ui-sans-serif,system-ui,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
-          "name": "Ui-sans-serif",
+          "fontFamily": "Inter,system-ui,sans-serif",
+          "name": "Inter",
           "slug": "sans"
         },
         {
@@ -1287,6 +1317,11 @@
           "fontFamily": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace",
           "name": "Ui-monospace",
           "slug": "mono"
+        },
+        {
+          "fontFamily": "Montserrat,system-ui,sans-serif",
+          "name": "Montserrat",
+          "slug": "display"
         }
       ],
       "fontSizes": [
