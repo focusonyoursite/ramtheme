@@ -200,13 +200,3 @@ sage()->singleton('sage.container', function () {
     }, true);
     return $sage;
 });
-
-/**
- * Add test route
- */
-add_action('template_redirect', function () {
-    if (is_page('test')) {
-        echo view('test')->render();
-        exit();
-    }
-});

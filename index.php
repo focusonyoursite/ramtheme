@@ -11,21 +11,11 @@
 |
 */
 
-// Basic error reporting
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
-// Debug information
-echo "<!-- Debug: Starting index.php -->\n";
-
 if (! file_exists($composer = __DIR__.'/vendor/autoload.php')) {
-    echo "<!-- Debug: Composer autoload not found -->\n";
     wp_die(__('Error locating autoloader. Please run <code>composer install</code>.', 'sage'));
 }
 
 require $composer;
-
-echo "<!-- Debug: Composer autoload loaded -->\n";
 
 /*
 |--------------------------------------------------------------------------
@@ -39,26 +29,17 @@ echo "<!-- Debug: Composer autoload loaded -->\n";
 |
 */
 
-try {
-    if (! function_exists('\Roots\bootloader')) {
-        echo "<!-- Debug: Roots bootloader not found -->\n";
-        wp_die(
-            __('You need to install Acorn to use this theme.', 'sage'),
-            '',
-            [
-                'link_url' => 'https://roots.io/acorn/docs/installation/',
-                'link_text' => __('Acorn Docs: Installation', 'sage'),
-            ]
-        );
-    }
-
-    echo "<!-- Debug: Starting bootloader -->\n";
-    \Roots\bootloader()->boot();
-    echo "<!-- Debug: Bootloader completed -->\n";
-
-} catch (Exception $e) {
-    echo "<!-- Debug Error: " . esc_html($e->getMessage()) . " -->\n";
-    echo "<!-- Debug Trace: " . esc_html($e->getTraceAsString()) . " -->\n";
+if (! function_exists('\Roots\bootloader')) {
+    wp_die(
+        __('You need to install Acorn to use this theme.', 'sage'),
+        '',
+        [
+            'link_url' => 'https://roots.io/acorn/docs/installation/',
+            'link_text' => __('Acorn Docs: Installation', 'sage'),
+        ]
+    );
 }
+
+\Roots\bootloader()->boot();
 
 echo view(app('sage.view'), app('sage.data'))->render();
