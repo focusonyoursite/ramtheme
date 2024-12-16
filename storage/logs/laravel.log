@@ -94,3 +94,131 @@
 #17 /usr/local/bin/wp(4): include('...')
 #18 {main}
 "} 
+[2024-12-16 06:09:38] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php:210)
+[stacktrace]
+#0 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php(135): Illuminate\\Log\\LogManager->resolve()
+#1 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php(122): Illuminate\\Log\\LogManager->get()
+#2 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php(645): Illuminate\\Log\\LogManager->driver()
+#3 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Exceptions/Handler.php(274): Illuminate\\Log\\LogManager->error()
+#4 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(198): Illuminate\\Foundation\\Exceptions\\Handler->report()
+#5 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException()
+#6 {main}
+"} 
+[2024-12-16 06:09:38] laravel.ERROR: The /sites/ramsite.nl/files/wp-content/themes/ramtheme/storage/framework/cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The /sites/ramsite.nl/files/wp-content/themes/ramtheme/storage/framework/cache directory must be present and writable. at /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php:178)
+[stacktrace]
+#0 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/PackageManifest.php(91): Illuminate\\Foundation\\PackageManifest->write()
+#1 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php(107): Roots\\Acorn\\PackageManifest->build()
+#2 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php(90): Illuminate\\Foundation\\PackageManifest->getManifest()
+#3 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php(79): Illuminate\\Foundation\\PackageManifest->config()
+#4 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#5 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(242): Roots\\Acorn\\Bootstrap\\RegisterFacades->bootstrap()
+#6 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Console/Kernel.php(383): Illuminate\\Foundation\\Application->bootstrapWith()
+#7 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/Bootloader.php(174): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/Bootloader.php(118): Roots\\Acorn\\Bootloader->bootWpCli()
+#9 /sites/ramsite.nl/files/wp-content/themes/ramtheme/functions.php(48): Roots\\Acorn\\Bootloader->boot()
+#10 /sites/ramsite.nl/files/wp-settings.php(688): include('...')
+#11 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1363): require('...')
+#12 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1282): WP_CLI\\Runner->load_wordpress()
+#13 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(28): WP_CLI\\Runner->start()
+#14 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/bootstrap.php(83): WP_CLI\\Bootstrap\\LaunchRunner->process()
+#15 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/wp-cli.php(32): WP_CLI\\bootstrap()
+#16 phar:///usr/local/bin/wp/php/boot-phar.php(20): include('...')
+#17 /usr/local/bin/wp(4): include('...')
+#18 {main}
+"} 
+[2024-12-16 06:09:38] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php:210)
+[stacktrace]
+#0 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php(135): Illuminate\\Log\\LogManager->resolve()
+#1 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php(122): Illuminate\\Log\\LogManager->get()
+#2 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php(645): Illuminate\\Log\\LogManager->driver()
+#3 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Exceptions/Handler.php(274): Illuminate\\Log\\LogManager->error()
+#4 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(198): Illuminate\\Foundation\\Exceptions\\Handler->report()
+#5 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException()
+#6 {main}
+"} 
+[2024-12-16 06:09:38] laravel.ERROR: The /sites/ramsite.nl/files/wp-content/themes/ramtheme/storage/framework/cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The /sites/ramsite.nl/files/wp-content/themes/ramtheme/storage/framework/cache directory must be present and writable. at /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php:178)
+[stacktrace]
+#0 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/PackageManifest.php(91): Illuminate\\Foundation\\PackageManifest->write()
+#1 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php(107): Roots\\Acorn\\PackageManifest->build()
+#2 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php(90): Illuminate\\Foundation\\PackageManifest->getManifest()
+#3 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php(79): Illuminate\\Foundation\\PackageManifest->config()
+#4 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#5 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(242): Roots\\Acorn\\Bootstrap\\RegisterFacades->bootstrap()
+#6 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Console/Kernel.php(383): Illuminate\\Foundation\\Application->bootstrapWith()
+#7 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/Bootloader.php(174): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/Bootloader.php(118): Roots\\Acorn\\Bootloader->bootWpCli()
+#9 /sites/ramsite.nl/files/wp-content/themes/ramtheme/functions.php(48): Roots\\Acorn\\Bootloader->boot()
+#10 /sites/ramsite.nl/files/wp-settings.php(688): include('...')
+#11 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1363): require('...')
+#12 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1282): WP_CLI\\Runner->load_wordpress()
+#13 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(28): WP_CLI\\Runner->start()
+#14 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/bootstrap.php(83): WP_CLI\\Bootstrap\\LaunchRunner->process()
+#15 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/wp-cli.php(32): WP_CLI\\bootstrap()
+#16 phar:///usr/local/bin/wp/php/boot-phar.php(20): include('...')
+#17 /usr/local/bin/wp(4): include('...')
+#18 {main}
+"} 
+[2024-12-16 06:09:39] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php:210)
+[stacktrace]
+#0 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php(135): Illuminate\\Log\\LogManager->resolve()
+#1 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php(122): Illuminate\\Log\\LogManager->get()
+#2 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php(645): Illuminate\\Log\\LogManager->driver()
+#3 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Exceptions/Handler.php(274): Illuminate\\Log\\LogManager->error()
+#4 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(198): Illuminate\\Foundation\\Exceptions\\Handler->report()
+#5 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException()
+#6 {main}
+"} 
+[2024-12-16 06:09:39] laravel.ERROR: The /sites/ramsite.nl/files/wp-content/themes/ramtheme/storage/framework/cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The /sites/ramsite.nl/files/wp-content/themes/ramtheme/storage/framework/cache directory must be present and writable. at /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php:178)
+[stacktrace]
+#0 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/PackageManifest.php(91): Illuminate\\Foundation\\PackageManifest->write()
+#1 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php(107): Roots\\Acorn\\PackageManifest->build()
+#2 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php(90): Illuminate\\Foundation\\PackageManifest->getManifest()
+#3 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php(79): Illuminate\\Foundation\\PackageManifest->config()
+#4 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#5 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(242): Roots\\Acorn\\Bootstrap\\RegisterFacades->bootstrap()
+#6 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Console/Kernel.php(383): Illuminate\\Foundation\\Application->bootstrapWith()
+#7 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/Bootloader.php(174): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/Bootloader.php(118): Roots\\Acorn\\Bootloader->bootWpCli()
+#9 /sites/ramsite.nl/files/wp-content/themes/ramtheme/functions.php(48): Roots\\Acorn\\Bootloader->boot()
+#10 /sites/ramsite.nl/files/wp-settings.php(688): include('...')
+#11 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1363): require('...')
+#12 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1282): WP_CLI\\Runner->load_wordpress()
+#13 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(28): WP_CLI\\Runner->start()
+#14 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/bootstrap.php(83): WP_CLI\\Bootstrap\\LaunchRunner->process()
+#15 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/wp-cli.php(32): WP_CLI\\bootstrap()
+#16 phar:///usr/local/bin/wp/php/boot-phar.php(20): include('...')
+#17 /usr/local/bin/wp(4): include('...')
+#18 {main}
+"} 
+[2024-12-16 06:10:03] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php:210)
+[stacktrace]
+#0 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php(135): Illuminate\\Log\\LogManager->resolve()
+#1 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php(122): Illuminate\\Log\\LogManager->get()
+#2 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/illuminate/log/LogManager.php(645): Illuminate\\Log\\LogManager->driver()
+#3 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Exceptions/Handler.php(274): Illuminate\\Log\\LogManager->error()
+#4 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(198): Illuminate\\Foundation\\Exceptions\\Handler->report()
+#5 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException()
+#6 {main}
+"} 
+[2024-12-16 06:10:03] laravel.ERROR: The /sites/ramsite.nl/files/wp-content/themes/ramtheme/storage/framework/cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The /sites/ramsite.nl/files/wp-content/themes/ramtheme/storage/framework/cache directory must be present and writable. at /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php:178)
+[stacktrace]
+#0 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/PackageManifest.php(91): Illuminate\\Foundation\\PackageManifest->write()
+#1 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php(107): Roots\\Acorn\\PackageManifest->build()
+#2 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php(90): Illuminate\\Foundation\\PackageManifest->getManifest()
+#3 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/PackageManifest.php(79): Illuminate\\Foundation\\PackageManifest->config()
+#4 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#5 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(242): Roots\\Acorn\\Bootstrap\\RegisterFacades->bootstrap()
+#6 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Illuminate/Foundation/Console/Kernel.php(383): Illuminate\\Foundation\\Application->bootstrapWith()
+#7 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/Bootloader.php(174): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 /sites/ramsite.nl/files/wp-content/themes/ramtheme/vendor/roots/acorn/src/Roots/Acorn/Bootloader.php(118): Roots\\Acorn\\Bootloader->bootWpCli()
+#9 /sites/ramsite.nl/files/wp-content/themes/ramtheme/functions.php(48): Roots\\Acorn\\Bootloader->boot()
+#10 /sites/ramsite.nl/files/wp-settings.php(688): include('...')
+#11 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1363): require('...')
+#12 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1282): WP_CLI\\Runner->load_wordpress()
+#13 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(28): WP_CLI\\Runner->start()
+#14 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/bootstrap.php(83): WP_CLI\\Bootstrap\\LaunchRunner->process()
+#15 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/wp-cli.php(32): WP_CLI\\bootstrap()
+#16 phar:///usr/local/bin/wp/php/boot-phar.php(20): include('...')
+#17 /usr/local/bin/wp(4): include('...')
+#18 {main}
+"} 

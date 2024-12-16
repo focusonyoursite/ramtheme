@@ -100,4 +100,17 @@ return [
     'key' => defined('SAGE_KEY') ? SAGE_KEY : '',
 
     'cipher' => 'AES-256-CBC',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Cache Directory
+    |--------------------------------------------------------------------------
+    |
+    | When using the Illuminate caching library, this value determines the
+    | default cache directory that should be used by the framework. A sensible
+    | default has been specified, but you are free to change this value.
+    |
+    */
+
+    'cache_dir' => get_theme_file_path('storage/framework/cache'),
 ]; 
