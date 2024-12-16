@@ -40,6 +40,11 @@ if (! function_exists('\Roots\bootloader')) {
     );
 }
 
+// Load helpers before bootloader
+if (file_exists($helpers = __DIR__ . '/app/helpers.php')) {
+    require_once $helpers;
+}
+
 \Roots\bootloader()->boot();
 
 /*
