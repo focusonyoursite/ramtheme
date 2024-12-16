@@ -32,7 +32,7 @@
         </div>
       </section>
 
-      <!-- Buttons -->
+      <!-- Buttonsss -->
       <section class="space-y-4">
         <h2 class="text-2xl font-bold mb-4">Buttons</h2>
         <div class="card p-6">
