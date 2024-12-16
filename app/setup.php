@@ -6,7 +6,7 @@
 
 namespace App;
 
-use Roots\Acorn\Application\Container;
+use Roots\Acorn\Application;
 use Roots\Acorn\Assets\AssetManager;
 use Roots\Acorn\View\ViewServiceProvider;
 use Roots\Acorn\View\Composer;
@@ -155,7 +155,7 @@ add_action('after_setup_theme', function () {
     /**
      * Add Blade to Sage container
      */
-    sage()->singleton('sage.blade', function (Container $app) {
+    sage()->singleton('sage.blade', function (Application $app) {
         $cachePath = config('view.compiled');
         if (!file_exists($cachePath)) {
             wp_mkdir_p($cachePath);
