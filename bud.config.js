@@ -1,63 +1,38 @@
 /**
- * Compiler configuration
+ * Build configuration
  *
- * @see {@link https://roots.io/sage/docs sage documentation}
- * @see {@link https://bud.js.org/learn/config bud.js configuration guide}
+ * @see {@link https://roots.io/docs/sage/ sage documentation}
+ * @see {@link https://bud.js.org/guides/configure/ bud.js configuration guide}
  *
- * @type {import('@roots/bud').Config}
+ * @typedef {import('@roots/bud').Bud} Bud
+ * @param {Bud} app
  */
 export default async (app) => {
   /**
-   * Application assets & entrypoints
-   *
-   * @see {@link https://bud.js.org/reference/bud.entry}
-   * @see {@link https://bud.js.org/reference/bud.assets}
+   * Application entrypoints
+   * @see {@link https://bud.js.org/docs/bud.entry/}
    */
   app
-    .entry('app', ['@scripts/app', '@styles/app'])
-    .entry('editor', ['@scripts/editor', '@styles/editor'])
-    .assets(['images']);
-
-  /**
-   * Set public path
-   *
-   * @see {@link https://bud.js.org/reference/bud.setPublicPath}
-   */
-  app.setPublicPath('/app/themes/sage/public/');
-
-  /**
-   * Development server settings
-   *
-   * @see {@link https://bud.js.org/reference/bud.setUrl}
-   * @see {@link https://bud.js.org/reference/bud.setProxyUrl}
-   * @see {@link https://bud.js.org/reference/bud.watch}
-   */
-  app
-    .setUrl('http://localhost:3000')
-    .setProxyUrl('http://example.test')
-    .watch(['resources/views', 'app']);
+    .entry({
+      app: ['@scripts/app', '@styles/app'],
+      editor: ['@scripts/editor', '@styles/editor'],
+    })
+    .assets(['images'])
+    .watch(['resources/views/**/*', 'app/**/*'])
+    .proxy('https://ramsite.nl')
+    .setPublicPath('/wp-content/themes/ramtheme/public/')
+    .setUrl('https://ramsite.nl');
 
   /**
    * Generate WordPress `theme.json`
-   *
-   * @note This overwrites `theme.json` on every build.
-   *
-   * @see {@link https://bud.js.org/extensions/sage/theme.json}
-   * @see {@link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json}
    */
   app.wpjson
-    .setSettings({
-      background: {
-        backgroundImage: true,
-      },
+    .settings({
       color: {
         custom: false,
-        customDuotone: false,
         customGradient: false,
-        defaultDuotone: false,
-        defaultGradients: false,
         defaultPalette: false,
-        duotone: [],
+        defaultGradients: false,
       },
       custom: {
         spacing: {},
@@ -77,4 +52,6 @@ export default async (app) => {
     .useTailwindColors()
     .useTailwindFontFamily()
     .useTailwindFontSize();
+
+  return app;
 };
