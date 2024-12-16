@@ -2,10 +2,10 @@
 
 namespace App;
 
-use Roots\Acorn\Application\Container;
+use Illuminate\Container\Container;
 
 /**
- * Get the sage containert.
+ * Get the sage container.
  *
  * @param string $abstract
  * @param array  $parameters
