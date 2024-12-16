@@ -3,12 +3,16 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-// Load WordPress
-require_once dirname(__FILE__) . '/../../wp-load.php';
+// Debug paths
+echo "Current file: " . __FILE__ . "\n";
+echo "Attempting to load from: " . realpath(dirname(__FILE__) . '/../../wp-load.php') . "\n";
+
+// Load WordPress with absolute path
+require_once '/sites/ramsite.nl/files/wp-load.php';
 
 // Basic WordPress test
 echo "WordPress is loaded: " . (defined('ABSPATH') ? 'Yes' : 'No') . "\n";
-echo "WordPress version: " . $wp_version . "\n";
+echo "WordPress version: " . $GLOBALS['wp_version'] . "\n";
 
 // Test if REST API class exists
 echo "WP_REST_Server exists: " . (class_exists('WP_REST_Server') ? 'Yes' : 'No') . "\n";
@@ -30,6 +34,14 @@ echo "Memory limit: " . ini_get('memory_limit') . "\n";
 // Include path
 echo "Include path: " . get_include_path() . "\n";
 
-// Current file location
-echo "Current file: " . __FILE__ . "\n";
-echo "ABSPATH: " . ABSPATH . "\n"; 
+// WordPress paths
+echo "ABSPATH: " . ABSPATH . "\n";
+echo "WP_CONTENT_DIR: " . WP_CONTENT_DIR . "\n";
+echo "WP_PLUGIN_DIR: " . WP_PLUGIN_DIR . "\n";
+
+// REST API specific information
+echo "\nREST API Information:\n";
+echo "rest_get_url_prefix(): " . (function_exists('rest_get_url_prefix') ? rest_get_url_prefix() : 'Not available') . "\n";
+echo "rest_url(): " . (function_exists('rest_url') ? rest_url() : 'Not available') . "\n";
+echo "get_rest_url(): " . (function_exists('get_rest_url') ? get_rest_url() : 'Not available') . "\n";
+  
